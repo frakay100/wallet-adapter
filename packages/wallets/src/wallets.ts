@@ -7,7 +7,6 @@ import { SolongWalletAdapter, SolongWalletAdapterConfig } from '@solana/wallet-a
 import { TorusWalletAdapter, TorusWalletAdapterConfig } from '@solana/wallet-adapter-torus';
 
 export enum WalletName {
-    Ledger = 'Ledger',
     MathWallet = 'MathWallet',
     Phantom = 'Phantom',
     Solflare = 'Solflare',
