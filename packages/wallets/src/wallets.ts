@@ -26,13 +26,6 @@ export interface Wallet {
 
 export const ICONS_URL = 'https://raw.githubusercontent.com/solana-labs/wallet-adapter/master/packages/wallets/icons';
 
-export const getLedgerWallet = (config?: LedgerWalletAdapterConfig): Wallet => ({
-    name: WalletName.Ledger,
-    url: 'https://www.ledger.com',
-    icon: `${ICONS_URL}/ledger.svg`,
-    adapter: () => new LedgerWalletAdapter(config),
-});
-
 export const getMathWallet = (config?: MathWalletWalletAdapterConfig): Wallet => ({
     name: WalletName.MathWallet,
     url: 'https://mathwallet.org',
